@@ -2,7 +2,7 @@ boolean pushButton1;
 boolean pushButton2;
 
 int ledPin = 9;
-brightness = 128;
+unsigned int brightness = 128;
 
 void setup() {
   // put your setup code here, to run once:
@@ -21,7 +21,7 @@ void loop() {
   if(!pushButton1 && brightness >0){
     brightness--;
   } else if(!pushButton2 && brightness <255){
-    brightness++
+    brightness++;
   }
 
   analogWrite(ledPin,brightness);
