@@ -2,7 +2,7 @@ boolean pushButton1;
 boolean pushButton2;
 
 int ledPin = 9;
-unsigned int brightness = 128;
+int brightness = 128;
 
 void setup() {
   // put your setup code here, to run once:
